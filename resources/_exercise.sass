@@ -1,0 +1,46 @@
+body.exercise 
+  display: grid
+  grid-template-areas: "header" "nav" "main" "footer"
+  grid-template-rows: 120px 70px 1fr 60px
+  
+  
+nav.nav-exercise
+  justify-content: space-between
+
+.actions
+  display: flex
+
+  a, button 
+    font-size: 1rem
+    margin: 0 .4rem
+    cursor: pointer
+    padding: 8px 16px
+    border-radius: 6px
+    transition: all .3s ease
+  
+  a
+    text-decoration: none
+    color: $c__white
+    border: 2px solid $c__primary
+    
+    &:hover 
+      background-color: $c__primary
+      border: 2px solid rgba($c__white, .5)
+
+  button
+    outline: none
+    border: none
+    border: 2px solid $c__secondary
+    background: transparent
+    color: $c__white
+
+    &:hover 
+      background-color: $c__secondary
+      border: 2px solid rgba($c__white, .5)
+
+main[exercise]
+  grid-area: main
+  height: calc( 100vh - 250px )
+  background-color: #ccc
+  padding: 15px 20px
+
