@@ -23,15 +23,17 @@
     <span class="breadcrumb">You're in: <span class="path"><?= "{$module} > {$title}" ?></span></span>
 
     <div class="actions">
+      <a no-format title="Show the PHP source code" href=<?= "./views{$_GET['dir']}/{$_GET['file']}.php"?> >No format</a>
       <a href="./" title="Back to exercises showpage">Go Back</a>
-      <button>No format</button>
     </div>
   </nav>
 
   <main exercise>
     <div class="content">
 
-      <?php include ".{$_GET['dir']}/{$_GET['file']}";?>
+      <h1 class="ex-title"><?= $title?></h1>
+
+      <?php include "./views{$_GET['dir']}/{$_GET['file']}.php"; ?>
       
     </div>
   </main>

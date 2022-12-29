@@ -9,35 +9,43 @@
  * @author Lucas Vidal
  */
 
-
 class Data {
-  public $dia = 3;
-  public $mes = 9;
+  public $dia = 2;
+  public $mes = 6;
   public $ano = 2000;
 
-  // function __construct(
-  //   $d, $m, $a
-  // ){
-  //   $this->dia = $d;
-  //   $this->mes = $m;
-  //   $this->ano = $a;
-  // }
-
   /**
-   * Respnsável por apresentar a data na tela do usuário
+   * Responsável por apresentar a data na tela do usuário
    */
   public function apresentar() {
-    $data = "{$this->dia}/{$this->mes}/{$this->ano}";
-    return $data; 
+    echo "{$this->dia}/{$this->mes}/{$this->ano}";
   }
 
 }
 
-$data1 = new Data(01,01,1970);
-$data2 = new Data(02,06,2000);
+$showFixedData = new Data();
+$testParams = new Data(01,01,1970);
 
-echo "<h6>{$data1->apresentar()}</h6>";
-echo "Meu niver: {$data2->apresentar()}";
+$showData = new Data();
+$showData->dia = 29;
+$showData->mes = 10;
+$showData->ano = 1966;
 
 
+echo "This' the fixed data inside the class: <br> <b>Result: </b>";
+echo $showFixedData->apresentar();
+
+echo '<br><br> Calling with params ("new Data(01,01,1970)"): <br> <b>Result: </b>';
+echo $testParams->apresentar();
 ?>
+
+<br><br><br> And we can acess the statements, if public, like below: <br>
+<code style="background-color: #aaa">
+  $showData = new Data(); <br>
+  $showData->dia = 29; <br>
+  $showData->mes = 10; <br>
+  $showData->ano = 1966; <br>
+  $showData->apresentar() <br>
+</code> <br>
+
+<b>Result: <?= $showData->apresentar() ?></b>

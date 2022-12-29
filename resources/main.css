@@ -17,7 +17,7 @@ header {
   grid-area: header;
   width: 100%;
   text-align: center;
-  background-color: #DE3C4B;
+  background-color: #742028;
   padding: 2rem;
   margin: 0;
   color: #FEFDFF;
@@ -102,7 +102,7 @@ main .content {
   transform: translateX(5px);
 }
 .links li:hover a {
-  color: #DE3C4B;
+  color: #742028;
 }
 
 .node[c__black] {
@@ -116,13 +116,13 @@ main .content {
 }
 
 .node[c__pri] {
-  background-color: #DE3C4B;
-  border: 2px solid #DE3C4B;
+  background-color: #742028;
+  border: 2px solid #742028;
 }
 
 footer {
   grid-area: footer;
-  background-color: #DE3C4B;
+  background-color: #742028;
   width: 100%;
   padding: 1rem 2rem;
   color: #FEFDFF;
@@ -154,20 +154,16 @@ nav.nav-exercise {
 .actions a {
   text-decoration: none;
   color: #FEFDFF;
-  border: 2px solid #DE3C4B;
+  border: 2px solid #742028;
 }
 .actions a:hover {
-  background-color: #DE3C4B;
+  background-color: #742028;
   border: 2px solid rgba(254, 253, 255, 0.5);
 }
-.actions button {
-  outline: none;
-  border: none;
+.actions [no-format] {
   border: 2px solid #4062BB;
-  background: transparent;
-  color: #FEFDFF;
 }
-.actions button:hover {
+.actions [no-format]:hover {
   background-color: #4062BB;
   border: 2px solid rgba(254, 253, 255, 0.5);
 }
@@ -177,4 +173,10 @@ main[exercise] {
   height: calc(100vh - 250px);
   background-color: #ccc;
   padding: 15px 20px;
+}
+
+.ex-title {
+  padding: 0.8rem 0.5rem 0.3rem;
+  border-bottom: 2px solid rgba(7, 2, 13, 0.2);
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
