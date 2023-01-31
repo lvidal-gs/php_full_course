@@ -64,12 +64,13 @@ main
   flex-basis: 32%
   margin: 1rem 0
   border-radius: 8px
+  height: 100%
   
   h3
     text-align: center
     color: $c__white
-    padding: 1rem 2rem
-    font-size: 1.5rem
+    padding: .7rem 2rem
+    font-size: 1.1rem
 
   .links
     list-style: none
@@ -85,7 +86,7 @@ main
     width: fit-content
 
     a
-      font-size: 1.2rem
+      font-size: .9rem
       width: 100%
       text-decoration: none
       color: $c__black
@@ -112,9 +113,43 @@ main
   background-color: $c__primary
   border: 2px solid $c__primary
 
+.node[c__ora]
+  background-color: #ff1111
+  border: 2px solid #ff1111
+
+.node[c__gre]
+  background-color: #2E933C
+  border: 2px solid #2E933C
+
+.node[c__pur]
+  background-color: #681e65
+  border: 2px solid #681e65
+
+.node[c__coo]
+  background-color: #b87333
+  border: 2px solid #b87333
 
     
+button.exc 
+  outline: none
+  background: lighten($c__primary, 2%)
+  cursor: pointer
+  border: none
+  border-radius: 8px
+  margin: 15px 0
+  padding: .8rem 1.2rem
+  color: $c__white
+  font-weight: bold
+  box-shadow: 0 6px 0 0 darken($c__primary, 15%)
+  transition: all .3s ease
 
+  &:hover
+    box-shadow: 0 4px 0 0 darken($c__primary, 15%)
+    transform: translateY(2px)
+
+  &:active
+    box-shadow: 0 0 0 0 darken($c__primary, 15%)
+    transform: translateY(6px)
 
 footer 
   grid-area: footer
@@ -124,3 +159,9 @@ footer
   color: $c__white
   text-align: right
   font-weight: bold
+
+p[code]
+  background-color: #333
+  padding: 1rem 2rem
+  color: $c__white
+  margin: 1rem 0
